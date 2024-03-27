@@ -20,9 +20,9 @@ netty-websocket-spring-boot-starter
 
 ```xml
 <dependency>
-    <groupId>com.lizhi.game</groupId>
+    <groupId>com.adealink.weparty</groupId>
     <artifactId>netty-websocket-spring-boot-starter</artifactId>
-    <version>0.12.0-SNAPSHOT</version>
+    <version>0.15.0-SNAPSHOT</version>
     <exclusions>
         <exclusion>
             <artifactId>javax.servlet-api</artifactId>
@@ -38,9 +38,9 @@ netty-websocket-spring-boot-starter
 
 ```xml
 <dependency>
-    <groupId>com.lizhi.game</groupId>
+    <groupId>com.adealink.weparty</groupId>
     <artifactId>netty-websocket-spring-boot-starter</artifactId>
-    <version>0.12.0-SNAPSHOT</version>
+    <version>0.15.0-SNAPSHOT</version>
 </dependency>
 ```
 
