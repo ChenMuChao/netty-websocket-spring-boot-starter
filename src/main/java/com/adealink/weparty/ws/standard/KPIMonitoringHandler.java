@@ -21,7 +21,7 @@ public class KPIMonitoringHandler  extends ChannelInboundHandlerAdapter {
         super.channelActive(ctx);
     }
     private void scheduleTaskQueueMonitoring(ChannelHandlerContext ctx) {
-
+        log.info("into scheduleTaskQueueMonitoring");
         kpiExecutorService.scheduleAtFixedRate(() -> {
             try {
                 Iterator<EventExecutor> executorGroups = ctx.executor().parent().iterator();
