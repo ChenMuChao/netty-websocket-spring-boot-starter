@@ -9,6 +9,7 @@ import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
 import lombok.extern.slf4j.Slf4j;
 
+
 @Slf4j
 class WebSocketServerHandler extends SimpleChannelInboundHandler<WebSocketFrame> {
 
@@ -27,6 +28,7 @@ class WebSocketServerHandler extends SimpleChannelInboundHandler<WebSocketFrame>
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) {
         pojoEndpointServer.doOnError(ctx.channel(), cause);
     }
+
 
     @Override
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {

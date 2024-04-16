@@ -244,7 +244,6 @@ class HttpWebSocketServerHandler extends SimpleChannelInboundHandler<FullHttpReq
             } else {
                 pipeline.addLast(new WebSocketServerHandler(pojoEndpointServer));
             }
-            pipeline.addLast(new KPIMonitoringHandler());
             String finalPattern = pattern;
 
             HttpHeaders responseHeader = channel.attr(RESPONSE_HEADER_KEY).get();
